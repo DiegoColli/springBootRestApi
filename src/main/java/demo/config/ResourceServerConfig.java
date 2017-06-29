@@ -1,4 +1,4 @@
-package config;
+package demo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -7,5 +7,5 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
-	// needs to be a separate config in order to be used in unit test with custom slices
+	// needs to be a separate demo.config in order to be used in unit test with custom slices
 }
