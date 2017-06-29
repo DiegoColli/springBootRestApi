@@ -30,6 +30,8 @@ public class Person {
 
 	private int age;
 
+	private String username;
+	
 	@OneToMany(mappedBy = "person")
 	private Set<Skill> skills = new HashSet<Skill>();
 
@@ -78,6 +80,14 @@ public class Person {
 
 	public void setParties(Set<Party> parties) {
 		this.parties = parties;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 }
