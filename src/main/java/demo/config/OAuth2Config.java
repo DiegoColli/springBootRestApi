@@ -49,6 +49,8 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 				.scopes("read", "write")
 				.authorizedGrantTypes("password", "refresh_token")
 				.resourceIds("resource");
+		
+//		http.antMatcher("/**").authorizeRequests().antMatchers("/", "/login**", "/webjars/**").permitAll().anyRequest()
 	}
 
 }
